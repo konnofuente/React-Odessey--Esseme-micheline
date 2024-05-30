@@ -135,141 +135,70 @@ const data = [
     },
   ];
   
-  function getBooks() {
-    return data;
-  }
+// dont make use of if/else and for 
   
-  function getBook(id) {
-    return data.find((d) => d.id === id);
-  }
-  
-//   //Aray sectiion and mapping
-  
-//   const books = getBooks();
-//   console.log(books)
-  
-//   const x=[1,2,3,4,5].map((e)=>e*2);
-//   console.log(x)
-  
-  
-//   const alltitle = books?.map((e) => e.title);
-//   alltitle;
-  
-  
-//   twoData = books.map((item)=>{
-//     return {
-//       title : item.title,
-//       author: item.author
-//     }
-//   })
-  
-//   twoData
-  
-  
-  
-  
-//   // sorting an array
-//   const arr = [3,6,8,4,0,6,2,4,6]
-  
-//   // make a copy and sort it 
-//   const sorted = arr.slice().sort((a,b) => b-a);
-//   sorted
-//   arr
-  
-  
-  
-  
-//   //merging 2 array
-  
-//   const newBook ={
-//     id:6,
-//     title : "dfdf",
-//     author: "hen"
-//   }
-  
-//   const addedArray = [...books , newBook]
-//   addedArray
-  
-//   // delete an id in an array
-//   const deleteArray = addedArray.filter((book) => book.id != 3);
-//   deleteArray
-  
-//   //update and arrray
-  
-//   const updateArray = deleteArray.map((book)=> {
-//     book.id === 1? {...book , pages:112} : book
-//   })
-//    updateArray
-  
-  
-  
-  
-  /*
-  // DEstructuring 
-  const books = getBook(2);
-  const { title, author, genres } = books;
-  // console.log( genres[2]);
-  console.log(books)
-  const [g1, g2,] = books.genres;
-  
-  // this funtion create a array from another and will add a value to the array
-  const b = [...books.genres, 'hello']
-  
-  console.log(g1, g2, a);
-  console.log(b);
-  
-  pages = 120;
-  
-  // this line of code will enable us to add a kay in a json file 
-  const updatedBook = { ...books, test: "hello" }
-  updatedBook
-  
-  
-  // the template enable us to use $ sign to display variables
-  const summary = ` ${title} a book  with author ${author}`;
-  summary
-  
-  //tertiary function
-  
-  message = pages > 20 ? `the other is ${title}` : `the is no other`;
-  console.log(`the message is ${message}`)
-  
-  
-  //arrow function 
-  const number = 3;
-  
-  mult2 = (num) => num * 2;
-  
-  val = mult2(number);
-  val
-  
-  console.log(val > 5 ? res = "good" : "bad" &&  res);
-  
-  
-  // reviews: {
-  //   goodreads: {
-  //     rating: 4.44,
-  //     ratingsCount: 2295233,
-  //     reviewsCount: 59058,
-  //   },
-  //   librarything: {
-    //     rating: 4.36,
-    //     ratingsCount: 38358,
-    //     reviewsCount: 1095,
-    //   },
-    // },
-    
-    // const book =getBook(2);
-    const book3 = getBook(3);
-  
-  
-  // here the optional chaining permit js to check if a val is undefine and will return another value if that is true 
-  function getReviewCount(b){
-  
-    reviewG = b.reviews.goodreads?.reviewsCount ?? 0
-    reviewL = b.reviews.librarything?.reviewsCount ?? 0
-    return reviewG +reviewL;
-  }
-  
-  console.log(getReviewCount(book3))
-   */
+
+  //  // Create a new array containing only the titles of the books.
+
+
+  //  Create a new array containing objects with only title and author properties
+
+  //  Sort the books by their publication date in descending order.
+
+  // Filter the books to only include those with a movie adaptation
+
+  // Calculate the total number of pages of all the books combined.
+
+  // Find the book with the title "Dune".
+
+  // Merge this array newBook and data in an array called updaedBook
+
+  const newBook = {
+    id: 6,
+    title: "New Book",
+    author: "New Author",
+    publicationDate: "2024-01-01",
+    genres: ["new genre"],
+    hasMovieAdaptation: false,
+    pages: 300,
+    translations: {},
+    reviews: {}
+  };
+
+  const updatedBook=[]
+
+  //  Remove the book with the ID of 3
+
+
+
+  // Update the pages of the book with ID 1 to 1120
+
+
+  // Destructure the title, author, and genres of the book with ID 2
+
+  // Create a new array of genres for book with ID 5, adding a new genre
+
+  //  Create a message indicating if the book with ID 1 has more than 1000 pages
+
+
+  // Create an arrow function that takes a book ID and returns the title.
+
+
+  // Get the number of reviews for the book with ID 3 using optional chaining
+
+
+  // Check if the book with ID 1 has both "fantasy" and "adventure" genres
+
+  // Get the Spanish translation of the book with ID 3, or default to "Not available".
+
+  // Calculate the average rating of the book with ID 1 from both Goodreads and LibraryThing.
+
+  // Check if there is any book with a rating higher than 4.5 on Goodreads.
+
+  // Check if all books have more than 200 pages.
+
+  // Find the book with ID 4 and create a new array of its genres in uppercase
+
+  // Create a new array containing all genres from all books, flattened into a single array.
+
+  // Check if the array of titles includes "Dune"
