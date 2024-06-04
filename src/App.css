@@ -35,8 +35,31 @@
 
 .card {
   padding: 2em;
+  
+  
 }
 
 .read-the-docs {
   color: #888;
+}
+.steps {
+  width: 600px;
+  background-color: #f7f7f7;
+  border-radius: 7px;
+  padding: 25px 100px;
+  margin: 100px auto;
+}
+.numbers{
+  display: flex;
+  justify-content: space-between ;
+}
+.numbers > div
+{
+  height: 48px;
+  aspect-ratio: 1;
+  background-color: #e7e7e7;
+  border-radius: 25px;
+  text-align: center;
+  padding: 10px;
+
 }
