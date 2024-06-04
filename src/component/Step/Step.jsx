@@ -30,7 +30,7 @@ function Step() {
                 <div className={`step >= 1 ? "active" : ""`}>3</div>
             </div>
 
-            <p className="message">Step {stop}: {messages[step - 1]}</p>
+            <p className="message" >Step {step}: {messages[step - 1]}</p>
             <div className="buttons">
                 <button style={{backgroundColor: '#7950f2', color : '#fff', borderRadius: '30px', marginRight:'250px'}} onClick={handlePrevious}>Previous</button>
                 <button style={{backgroundColor: '#7950f2', color : '#fff', borderRadius: '30px'}} onClick={handleNext}>Next</button>
